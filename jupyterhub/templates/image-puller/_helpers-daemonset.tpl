@@ -96,7 +96,7 @@ spec:
 
         {{- /* --- Pull default image --- */}}
         - name: image-pull-singleuser
-          image: {{ .Values.singleuser.image.name }}:{{ .Values.singleuser.image.tag }}
+          image: {{ .Values.singleuser.image.repository }}:{{ .Values.singleuser.image.tag }}
           command:
             - /bin/sh
             - -c

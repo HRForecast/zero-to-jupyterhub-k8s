@@ -171,7 +171,7 @@ for trait, cfg_key in (
         cfg_key = camelCaseify(trait)
     set_config_if_not_none(c.KubeSpawner, trait, "singleuser." + cfg_key)
 
-image = get_config("singleuser.image.name")
+image = get_config("singleuser.image.repository")
 if image:
     tag = get_config("singleuser.image.tag")
     if tag:
