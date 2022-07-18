@@ -368,7 +368,7 @@ singleuser:
       volumeNameTemplate: volume-{username}{servername}
       storageAccessModes: [ReadWriteOnce]
   image:
-    name: jupyterhub/k8s-singleuser-sample
+    repository: jupyterhub/k8s-singleuser-sample
     tag: "set-by-chartpress"
     pullPolicy:
     pullSecrets: []
